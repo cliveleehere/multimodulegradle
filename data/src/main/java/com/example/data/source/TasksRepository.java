@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp.data.source;
+package com.example.data.source;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.annotation.VisibleForTesting;
 
-import com.example.android.architecture.blueprints.todoapp.data.Task;
+import com.example.data.Task;
 import com.google.common.base.Optional;
 
 import java.util.Iterator;

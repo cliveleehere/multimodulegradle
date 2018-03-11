@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp.data.source.local;
+package com.example.data.source.local;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -24,9 +24,9 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.example.android.architecture.blueprints.todoapp.data.Task;
-import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource;
-import com.example.android.architecture.blueprints.todoapp.data.source.local.TasksPersistenceContract.TaskEntry;
+import com.example.data.Task;
+import com.example.data.source.TasksDataSource;
+import com.example.data.source.local.TasksPersistenceContract.TaskEntry;
 import com.example.android.architecture.blueprints.todoapp.util.schedulers.BaseSchedulerProvider;
 import com.google.common.base.Optional;
 import com.squareup.sqlbrite2.BriteDatabase;

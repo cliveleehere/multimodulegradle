@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp.data.source.remote;
+package com.example.data.source.remote;
 
 import android.support.annotation.NonNull;
 
-import com.example.android.architecture.blueprints.todoapp.data.Task;
-import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource;
+import com.example.data.Task;
+import com.example.data.source.TasksDataSource;
 import com.google.common.base.Optional;
 
 import java.util.Iterator;

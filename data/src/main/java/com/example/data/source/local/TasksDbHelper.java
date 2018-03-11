@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp.data.source.local;
+package com.example.data.source.local;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
