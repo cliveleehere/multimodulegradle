@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.android.architecture.blueprints.todoapp;
+package com.example.core;
 
-public interface BasePresenter {
+public interface BaseView<T> {
 
-    void subscribe();
-
-    void unsubscribe();
+    void setPresenter(T presenter);
 
 }

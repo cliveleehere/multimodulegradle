@@ -71,6 +71,7 @@ android {
  all versions in a single place. This improves readability and helps managing project complexity.
  */
 dependencies {
+    implementation project(":core")
     implementation project(":data")
     implementation project(":utils")
 
