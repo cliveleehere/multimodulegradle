@@ -1,1 +1,5 @@
 include ':app', ':data', ':utils', ':core'
+
+rootProject.children.each { subproject ->
+    subproject.buildFileName = "${subproject.name}.gradle"
+}
