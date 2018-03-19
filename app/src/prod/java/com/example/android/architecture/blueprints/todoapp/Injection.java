@@ -19,10 +19,10 @@ package com.example.android.architecture.blueprints.todoapp;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource;
-import com.example.android.architecture.blueprints.todoapp.data.source.TasksRepository;
-import com.example.android.architecture.blueprints.todoapp.data.source.local.TasksLocalDataSource;
-import com.example.android.architecture.blueprints.todoapp.data.source.remote.TasksRemoteDataSource;
+import com.example.data.source.TasksDataSource;
+import com.example.data.source.TasksRepository;
+import com.example.data.source.local.TasksLocalDataSource;
+import com.example.data.source.remote.TasksRemoteDataSource;
 import com.example.android.architecture.blueprints.todoapp.util.schedulers.BaseSchedulerProvider;
 import com.example.android.architecture.blueprints.todoapp.util.schedulers.SchedulerProvider;
 

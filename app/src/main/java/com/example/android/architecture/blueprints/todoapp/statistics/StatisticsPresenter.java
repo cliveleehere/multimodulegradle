@@ -19,8 +19,8 @@ package com.example.android.architecture.blueprints.todoapp.statistics;
 import android.support.annotation.NonNull;
 import android.support.v4.util.Pair;
 
-import com.example.android.architecture.blueprints.todoapp.data.Task;
-import com.example.android.architecture.blueprints.todoapp.data.source.TasksRepository;
+import com.example.data.Task;
+import com.example.data.source.TasksRepository;
 import com.example.android.architecture.blueprints.todoapp.util.EspressoIdlingResource;
 import com.example.android.architecture.blueprints.todoapp.util.schedulers.BaseSchedulerProvider;
 import com.google.common.primitives.Ints;
