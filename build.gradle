@@ -1,4 +1,5 @@
 buildscript {
+    apply from: './buildscripts/versions.gradle'
     repositories {
         // As of Gradle plugin 3.0 you can use the `google()` shortcut instead of `maven { url 'https://maven.google.com' }`
         google()
@@ -48,4 +49,10 @@ ext {
     rxjavaVersion = '2.1.3'
     rxandroidVersion = '2.0.1'
     sqlbriteVersion = '2.0.0'
+
+    supportLibraryAppcompat = "com.android.support:appcompat-v7:$supportLibraryVersion"
+    supportLibraryCardview = "com.android.support:cardview-v7:$supportLibraryVersion"
+    supportLibraryDesign = "com.android.support:design:$supportLibraryVersion"
+    supportLibraryRecyclerview = "com.android.support:recyclerview-v7:$supportLibraryVersion"
+    supportLibrarySupport = "com.android.support:support-v4:$supportLibraryVersion"
 }

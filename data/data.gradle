@@ -33,11 +33,13 @@ dependencies {
     implementation project(":utils")
 
     // App's dependencies, including test
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+    // part 2
+    implementation supportLibraryAppcompat
+    implementation supportLibraryCardview
+    implementation supportLibraryDesign
+    implementation rootProject.supportLibraryRecyclerview
+    implementation rootProject.ext.supportLibrarySupport
+
     implementation "com.android.support.test.espresso:espresso-idling-resource:$rootProject.espressoVersion"
     implementation "com.google.guava:guava:$rootProject.guavaVersion"
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"

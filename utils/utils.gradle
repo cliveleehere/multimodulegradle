@@ -1,3 +1,5 @@
+import com.example.gradle.Deps
+
 apply plugin: 'com.android.library'
 
 android {
@@ -28,15 +30,18 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // App's dependencies, including test
-    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
-    implementation "com.android.support.test.espresso:espresso-idling-resource:$rootProject.espressoVersion"
-    implementation "com.google.guava:guava:$rootProject.guavaVersion"
-    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
-    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+    // part 3
+    implementation deps.support.appcompatv7
+    implementation deps.support.cardviewv7
+    implementation deps.support.design
+    implementation deps.support.recyclerview
+    implementation deps.support.support
+
+    //part 4
+    implementation Deps.espressoIdlingRes
+    implementation Deps.guava
+    implementation Deps.rxJava
+    implementation Deps.rxAndroid
     implementation "com.squareup.sqlbrite2:sqlbrite:$rootProject.sqlbriteVersion"
 
     // Dependencies for local unit tests
