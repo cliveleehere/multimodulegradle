@@ -40,10 +40,11 @@ dependencies {
     implementation rootProject.supportLibraryRecyclerview
     implementation rootProject.ext.supportLibrarySupport
 
-    implementation "com.android.support.test.espresso:espresso-idling-resource:$rootProject.espressoVersion"
-    implementation "com.google.guava:guava:$rootProject.guavaVersion"
-    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjavaVersion"
-    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+    // part 5
+    implementation Libs.espresso
+    implementation Libs.guava
+    implementation Libs.rxJava
+    implementation Libs.rxJavaAndroid
     implementation "com.squareup.sqlbrite2:sqlbrite:$rootProject.sqlbriteVersion"
 
     // Dependencies for local unit tests
