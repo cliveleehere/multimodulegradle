@@ -1,2 +1,3 @@
 apply plugin: 'com.android.library'
 apply from: "$BUILDSCRIPTS_DIR/shared-data.gradle"
+apply from: "$BUILDSCRIPTS_DIR/shared-android.gradle"

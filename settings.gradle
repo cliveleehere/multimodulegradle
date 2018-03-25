@@ -9,3 +9,6 @@ project (':feature1-data').projectDir = new File('./feature1/feature1-data')
 
 include ':feature1-domain'
 project (':feature1-domain').projectDir = new File('./feature1/feature1-domain')
+
+include ':feature1-presentation'
+project (':feature1-presentation').projectDir = new File('./feature1/feature1-presentation')

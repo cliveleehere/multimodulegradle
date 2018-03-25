@@ -1,4 +1,6 @@
 apply plugin: 'com.android.application'
+apply from: "$BUILDSCRIPTS_DIR/shared-android.gradle"
+apply from: "$BUILDSCRIPTS_DIR/shared-variants.gradle"
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -35,35 +37,12 @@ android {
         }
     }
 
-    // Using gradle plugin 3 you need to specify flavor dimensions.
-    flavorDimensions 'buildType'
-
-    // If you need to add more flavors, consider using flavor dimensions.
-    productFlavors {
-        mock {
-            dimension 'buildType'
-            applicationIdSuffix = ".mock"
-        }
-        prod {
-            dimension 'buildType'
-        }
-    }
-
-    // Remove mockRelease as it's not needed.
-    android.variantFilter { variant ->
-        if (variant.buildType.name.equals('release')
-                && variant.getFlavors().get(0).name.equals('mock')) {
-            variant.setIgnore(true)
-        }
-    }
-
     // Always show the result of every unit test, even if it passes.
     testOptions.unitTests.all {
         testLogging {
             events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
         }
     }
-    buildToolsVersion '26.0.2'
 }
 
 /*
