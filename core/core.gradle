@@ -1,0 +1,2 @@
+apply plugin: 'java-library'
+apply from: "$BUILDSCRIPTS_DIR/shared-domain.gradle"

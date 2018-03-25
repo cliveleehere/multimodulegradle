@@ -19,7 +19,8 @@ package com.example.android.architecture.blueprints.todoapp.data;
 import android.support.annotation.NonNull;
 import android.support.annotation.VisibleForTesting;
 
-import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource;
+import com.example.data.Task;
+import com.example.data.source.TasksDataSource;
 import com.google.common.base.Optional;
 
 import java.util.Collection;

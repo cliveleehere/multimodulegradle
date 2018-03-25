@@ -1,0 +1,19 @@
+ext.deps = [:]
+
+def versions = [:]
+versions.supportLibraryVersion = '26.0.2'
+def deps = [:]
+
+def support = [:]
+support.appcompatv7 = "com.android.support:appcompat-v7:$versions.supportLibraryVersion"
+support.cardviewv7 = "com.android.support:cardview-v7:$versions.supportLibraryVersion"
+support.design = "com.android.support:design:$versions.supportLibraryVersion"
+support.recyclerview = "com.android.support:recyclerview-v7:$versions.supportLibraryVersion"
+support.support = "com.android.support:support-v4:$versions.supportLibraryVersion"
+deps.support = support
+
+def androidConfigs = [:]
+androidConfigs.minSdkVersion = '18'
+deps.androidConfgis = androidConfigs
+
+ext.deps = deps
