@@ -12,4 +12,8 @@ support.recyclerview = "com.android.support:recyclerview-v7:$versions.supportLib
 support.support = "com.android.support:support-v4:$versions.supportLibraryVersion"
 deps.support = support
 
+def androidConfigs = [:]
+androidConfigs.minSdkVersion = '18'
+deps.androidConfgis = androidConfigs
+
 ext.deps = deps

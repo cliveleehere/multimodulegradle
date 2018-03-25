@@ -3,3 +3,6 @@ include ':app', ':data', ':utils', ':core'
 rootProject.children.each { subproject ->
     subproject.buildFileName = "${subproject.name}.gradle"
 }
+
+include ':feature1-data'
+project (':feature1-data').projectDir = new File('./feature1/feature1-data')

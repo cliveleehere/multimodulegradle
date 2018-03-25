@@ -5,13 +5,11 @@ apply plugin: 'com.android.library'
 android {
     compileSdkVersion 26
 
-
-
     defaultConfig {
-        minSdkVersion 18
+        minSdkVersion deps.androidConfgis.minSdkVersion //using versions.gradle
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode Deps.androidConfigVersionCode //using buildSrc/../Deps.java
+        versionName AndroidConfigs.androidConfigVersionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

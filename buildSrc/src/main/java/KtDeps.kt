@@ -11,3 +11,7 @@ object Libs {
     val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
     val rxJavaAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxJavaAndroid}"
 }
+
+object AndroidConfigs {
+    val androidConfigVersionName = "1.0"
+}
