@@ -1,4 +1,4 @@
-include ':app', ':data', ':utils', ':core'
+include ':app', ':data', ':utils', ':core', ':buildscripts'
 
 rootProject.children.each { subproject ->
     subproject.buildFileName = "${subproject.name}.gradle"
@@ -6,3 +6,6 @@ rootProject.children.each { subproject ->
 
 include ':feature1-data'
 project (':feature1-data').projectDir = new File('./feature1/feature1-data')
+
+include ':feature1-domain'
+project (':feature1-domain').projectDir = new File('./feature1/feature1-domain')

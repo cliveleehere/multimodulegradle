@@ -55,4 +55,6 @@ ext {
     supportLibraryDesign = "com.android.support:design:$supportLibraryVersion"
     supportLibraryRecyclerview = "com.android.support:recyclerview-v7:$supportLibraryVersion"
     supportLibrarySupport = "com.android.support:support-v4:$supportLibraryVersion"
+
+    BUILDSCRIPTS_DIR = "$rootProject.projectDir/buildscripts"
 }
