@@ -14,6 +14,6 @@ deps.support = support
 
 def androidConfigs = [:]
 androidConfigs.minSdkVersion = '18'
-deps.androidConfgis = androidConfigs
+deps.androidConfigs = androidConfigs
 
 ext.deps = deps

@@ -4,17 +4,17 @@ buildscript {
         // As of Gradle plugin 3.0 you can use the `google()` shortcut instead of `maven { url 'https://maven.google.com' }`
         google()
         jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath "gradle.plugin.org.gradle.android:android-cache-fix-gradle-plugin:0.4.0"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
-}
-
-plugins {
-    id "org.gradle.android.cache-fix" version "0.3.6"
 }
 
 allprojects {

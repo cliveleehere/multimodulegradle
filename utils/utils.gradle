@@ -7,7 +7,7 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        minSdkVersion deps.androidConfgis.minSdkVersion //using versions.gradle
+        minSdkVersion deps.androidConfigs.minSdkVersion //using versions.gradle
         targetSdkVersion 26
         versionCode Deps.androidConfigVersionCode //using buildSrc/../Deps.java
         versionName AndroidConfigs.androidConfigVersionName
