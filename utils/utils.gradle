@@ -2,6 +2,7 @@ import com.example.gradle.Deps
 
 apply plugin: 'com.android.library'
 apply from: "$BUILDSCRIPTS_DIR/shared-android.gradle"
+apply from: "$BUILDSCRIPTS_DIR/shared-task.gradle"
 
 android {
     compileSdkVersion 26
