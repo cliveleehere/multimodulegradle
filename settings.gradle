@@ -12,3 +12,12 @@ project (':feature1-domain').projectDir = new File('./feature1/feature1-domain')
 
 include ':feature1-presentation'
 project (':feature1-presentation').projectDir = new File('./feature1/feature1-presentation')
+
+include ':feature2-data'
+project (':feature2-data').projectDir = new File('./feature2/feature2-data')
+
+include ':feature2-domain'
+project (':feature2-domain').projectDir = new File('./feature2/feature2-domain')
+
+include ':feature2-presentation'
+project (':feature2-presentation').projectDir = new File('./feature2/feature2-presentation')
