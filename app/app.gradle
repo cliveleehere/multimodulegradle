@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
+apply plugin: "org.gradle.android.cache-fix"
 apply from: "$BUILDSCRIPTS_DIR/shared-android.gradle"
 apply from: "$BUILDSCRIPTS_DIR/shared-variants.gradle"
+apply from: "$BUILDSCRIPTS_DIR/shared-task.gradle"
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion

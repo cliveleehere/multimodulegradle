@@ -2,12 +2,13 @@ import com.example.gradle.Deps
 
 apply plugin: 'com.android.library'
 apply from: "$BUILDSCRIPTS_DIR/shared-android.gradle"
+apply from: "$BUILDSCRIPTS_DIR/shared-task.gradle"
 
 android {
     compileSdkVersion 26
 
     defaultConfig {
-        minSdkVersion deps.androidConfgis.minSdkVersion //using versions.gradle
+        minSdkVersion deps.androidConfigs.minSdkVersion //using versions.gradle
         targetSdkVersion 26
         versionCode Deps.androidConfigVersionCode //using buildSrc/../Deps.java
         versionName AndroidConfigs.androidConfigVersionName

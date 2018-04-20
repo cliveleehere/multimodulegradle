@@ -1,0 +1,4 @@
+task cleanReports(type: Delete, group: 'Reports') {
+    description "Delete Reports"
+    delete 'reportsDirectory'
+}
