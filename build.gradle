@@ -5,8 +5,13 @@ buildscript {
         google()
         jcenter()
     }
+
+    apply {
+        from("./buildscripts/versions.gradle")
+    }
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath "com.android.tools.build:gradle:$ANDROID_GRADLE_PLUGIN"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -14,7 +19,7 @@ buildscript {
 }
 
 plugins {
-    id "org.gradle.android.cache-fix" version "0.3.6"
+    id "org.gradle.android.cache-fix" version "0.4.2"
 }
 
 allprojects {
