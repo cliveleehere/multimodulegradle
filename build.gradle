@@ -17,6 +17,7 @@ buildscript {
 }
 
 allprojects {
+    apply from: "$rootProject.projectDir/buildscripts/dependencyGraph.gradle.kts"
     repositories {
         google()
         jcenter()

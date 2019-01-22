@@ -8,7 +8,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath(kotlinModule("gradle-plugin", kotlin_version))
+        classpath(kotlin("gradle-plugin", kotlin_version))
     }
 }
 plugins {
@@ -18,7 +18,7 @@ apply {
     plugin("kotlin")
 }
 dependencies {
-    compile(kotlinModule("stdlib-jdk8", kotlin_version))
+    compile(kotlin("stdlib-jdk8", kotlin_version))
 }
 repositories {
     mavenCentral()

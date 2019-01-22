@@ -1,3 +1,8 @@
 apply plugin: 'com.android.library'
 apply from: "$BUILDSCRIPTS_DIR/shared-android.gradle"
 apply from: "$BUILDSCRIPTS_DIR/shared-variants.gradle"
+
+dependencies {
+    implementation project(":feature1-data")
+    implementation project(":feature1-domain")
+}
