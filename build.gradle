@@ -8,6 +8,11 @@ buildscript {
             url "https://plugins.gradle.org/m2/"
         }
     }
+
+    apply {
+        from("./buildscripts/versions.gradle")
+    }
+
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.0'
 
@@ -58,3 +63,5 @@ ext {
 
     BUILDSCRIPTS_DIR = "$rootProject.projectDir/buildscripts"
 }
+
+apply from: "./gradle/projectDependencyGraph.gradle"

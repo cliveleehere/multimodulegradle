@@ -17,3 +17,5 @@ androidConfigs.minSdkVersion = '18'
 deps.androidConfigs = androidConfigs
 
 ext.deps = deps
+
+ext.ANDROID_GRADLE_PLUGIN = '3.1.1'
