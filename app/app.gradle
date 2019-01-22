@@ -54,8 +54,7 @@ dependencies {
     implementation project(":core")
     implementation project(":data")
     implementation project(":utils")
-    implementation project(":feature1-presentation")
-    implementation project(":feature1-data")
+
     implementation project(":feature2-ui")
 
     // App's dependencies, including test
